@@ -1,32 +1,32 @@
 const validator = {
   isValid(numtarjeta){
-    console.log(numtarjeta);
+      
     //pasar los numeros a un array en orden inverso
-    let revertirNumero= Array.from(numtarjeta).reverse();
+    let reverseNumber= Array.from(numtarjeta).reverse();
     let suma = 0;
-    let estado = true;
-    for (let i=0; i<revertirNumero.length; i ++) {
+    let condition = true;
+    for (let i=0; i<reverseNumber.length; i ++) {
       //aplicar las operaciones a los numeros de las posiciones pares
       if ((i+1) %  2 == 0) {
-        revertirNumero[i] =revertirNumero[i]*2;
+        reverseNumber[i] =reverseNumber[i]*2;
         //si es >=10, restar menos 9
-        if (revertirNumero[i]>9){
-        revertirNumero[i] =revertirNumero[i]-9;
+        if (reverseNumber[i]>9){
+          reverseNumber[i] =reverseNumber[i]-9;
         }      
       } 
       //suma los digitos y nuevos digitos
-      suma+= parseInt(revertirNumero[i]);
-      console.log(revertirNumero); 
+      suma+= parseInt(reverseNumber[i]);
+      
     } 
     //comprobar si es una tarjeta valida
     if (suma%10==0) {
-      estado == true;
+      condition = true;
     }
     else{
-      estado=false;
+      condition=false;
     }
-    return estado; 
-    console.log(suma);
+    return condition; 
+
 },
   //enmascarar el número de la tarjeta excepto los ultimos 4 digitos  
 maskify : (numtarjeta)=>{

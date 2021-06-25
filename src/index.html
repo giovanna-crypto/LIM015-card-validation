@@ -6,15 +6,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <body>
       <section id="pantallaUno">
        <h1 id= "encabezado">ROLLING STONES EN LIMA <br> CONCIERTO EXCLUSIVO PARA CLIENTES VISA</h1>
         <div class="imagen">
           <img src="./img/rolling-stones.jpg" alt="rolling stones cantando">
         </div>
-        <h2 id="h2">¡VIVE TUS CONCIERTOS CON VISA!</h2>
+        <h2 id="subtitulo1">¡VUELVE A VIVIR TUS CONCIERTOS ESTA POST-PANDEMIA CON VISA!</h2>
         <div>Ingresa tus datos <br>
-          
         <input type="text" id="nombre"
         placeholder="Nombre y Apellido"class="input-100">
         <br>
@@ -24,23 +22,17 @@
         <br>
         <input type="text" id="MM/AA"
         placeholder="MM/AA"pattern="^[0-9]+" maxlength="5" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
-        
+
         <input type="text" id="CVV"
         placeholder="CVV"pattern="^[0-9]+" maxlength="3" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;"> 
         <br>
-        
          <input type="text" placeholder="Numero de Tarjeta" id ="numtarjeta" pattern="^[0-9]+" maxlength="16" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;"
-        />
+        /> 
         <button id="validar">VALIDAR VISA CARD</button>
         <br>
-        
-         
          </div>
-         
       </section>
-  
        <section id="pantallaDos">
-         <h2 id="saludo"></h2>
          <br>
          <p> EL NUMERO DE TARJETA INGRESADO ES : </p>
              <p id="cardNumberAsterisco"></p>
@@ -48,21 +40,19 @@
              <br>
              <h3>Escoge tu zona</h3>
              <br>
-          <select name="entradas" id="entrada">
+          <select>
             <option value="zonavip">Zona Vip / Satisfaction</option>
-            <option value="general">General / Angie</option> <br>
-            <br>
-            <br>
+            <option value="general">General / Angie</option>
+          </select>
             <input type="number" id="entrada" placeholder= "Entradas">
             <br>
             <button id="volver"class="btn-igual">Volver</button>
-         
-      
-      
-        </div></h2>
-        <header></header>
-    <main></main>
-    <footer></footer>
+            </section>
+            <header>
+            </header>
+            <main></main>
+            <br><br>
+    <footer>Copyright © 2021-2022 GLDi. Todos los derechos reservados.</footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
